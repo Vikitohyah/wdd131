@@ -22,6 +22,15 @@ body{
     height: 100vh;
 }
 
+header{
+    grid-area: header;
+    background-color: rgb(51, 50, 50);
+}
+
+p{
+    padding: 15px;
+}
+
 nav{
     grid-area: nav;
     background-color: black;
@@ -34,12 +43,6 @@ nav{
 nav a{
    text-decoration: none;
    color: white;
-}
-
-header{
-    grid-area: header;
-    background-color: rgb(51, 50, 50);
-    padding: 15px;
 }
 
 main{
