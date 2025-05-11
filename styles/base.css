@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "main main"
+    "footer footer";
+
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+header{
+    grid-area: header;
+    background-color: #03396c;
+}
+
+h1{
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+.name{
+    color: yellow;
+    font-size: 25px;
+}
+
+nav{
+    grid-area: nav;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: #3b3b52;
+
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    color: red;
+}
+
+main{
+    grid-area: main;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 20px;
+    gap: 10px;
+}
+
+.card{
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+
+}
+
+.card h2 {
+    background-color: #03396c;
+    color: white;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+.card ul{
+    align-items: center;
+    text-decoration: underline;
+    padding: 20px;
+}
+
+.card ul li {
+    margin-bottom: 8px;
+}
+
+.card a {
+    color: #0000EE;
+}
+
+.card a:hover {
+    color: rgb(83, 35, 131);
+}
+
+.resource-list{
+    padding: 80px 0;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+.about-content img{
+    width: 150px;
+    object-fit: cover;
+}
+
+.content{
+    gap: 20px;
+}
+
+
+.location{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+.content p {
+    margin-bottom: 1rem;
+}
+
+.location p {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.flag{
+    align-self: center;
+}
+
+.flag img{
+    width: 100px;
+    height: auto;
+    align-self: center;
+
+}
+
+
+h3{
+    text-align: center;
+    border-bottom: #cedfd9 3px solid;
+    
+}
+
+footer{
+    grid-area: footer;
+    padding: 20px;
+    background-color: #03396c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+footer p{
+    display: block;
+}
+
+#lastModified{
+    color: yellow;
+}
