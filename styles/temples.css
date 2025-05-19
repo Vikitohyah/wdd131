@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif, arial;
+}
+
+body{
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background-color: purple;
+    color: white;
+}
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+nav{
+    display: none;
+    flex-direction: column;
+    background-color: purple;
+    width: 100%;
+}
+
+nav a{
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    border-top: 1px solid white;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+nav.show {
+  display: flex;
+}
+
+nav a:hover{
+    color: rgb(206, 163, 206);
+}
+
+main { 
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main h2{
+    padding: 20px;
+    text-align: center;
+    color: purple;
+}
+
+.img-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    align-items: center;
+    width: 100%;
+}
+
+figure{
+    padding-bottom: 15px ;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+footer{
+    grid-area: footer;
+    padding: 10px;
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+footer p{
+    display: block;
+}
+
+#lastModified{
+    color: white;
+}
