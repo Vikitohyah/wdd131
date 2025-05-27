@@ -1,0 +1,46 @@
+@media  screen and (min-width: 786px) {
+
+  main .hero{
+    position: relative;
+  }
+
+  .hero img{
+    width: 100%;
+    height: auto;
+  }
+
+  h2{
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    padding: 10px;
+  }
+
+  .data-card{
+    position: absolute;
+    top: 20%;
+    margin-left: 20px;
+  }
+
+  .weather-card{
+    position: absolute;
+    top: 80%;
+    right: 16px;
+  }
+
+  .weather-card h2::after {
+    content: "⛅";
+    margin-left: 0.5rem;
+  }
+
+  .weather-icon {
+    display: none; /* Hidden in large view */
+  }
+
+  .data-card, .weather-card {
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 1rem;
+    max-width: 300px;
+  }
+
+}

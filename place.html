@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Temple Album</title>
+    <meta name="author" content="Victoria Edorh">
+    <meta name="description" content="A list of the Temples of the Church of Jesus Christ of Latter Day Saints and their locations">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Bostwana</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 550px)">
+                <img src="images/hero-small.webp" alt="Elephant" width="500" height="500">
+            </picture>
+        </div>
+
+        <section class="data-card">
+            <h2>Data</h2>
+
+            <table>
+                <tr>
+                    <td class="description"><strong>Area:</strong></td>
+                    <td>581,730 sq km</td>
+                </tr>
+                <tr>
+                    <td class="description"><strong>Population:</strong></td>
+                    <td>2,630,000</td>
+                </tr>
+                <tr>
+                    <td class="description"><strong>Capital:</strong></td>
+                    <td>Gaborone</td>
+                </tr>
+                <tr>
+                    <td class="description"><strong>Languages:</strong></td>
+                    <td>English, Tswana</td>
+                </tr>
+                <tr>
+                    <td class="description"><strong>Currency:</strong></td>
+                    <td>Botswana Pula (BWP)</td>
+                </tr>
+                <tr>
+                    <td class="description"><strong>Time Zone:</strong></td>
+                    <td>UTC+2</td>
+                </tr>
+                <tr>
+                    <td class="description"><strong>Calling Code:</strong></td>
+                    <td>+267</td>
+                </tr>
+                <tr>
+                    <td class="description"><strong>Internet TLD:</strong></td>
+                    <td>.bw</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Weather Section -->
+        <section class="weather-card">
+            <h2>Weather <span class="weather-icon"></span></h2>
+            <img src="images/weather-icon.svg" alt="Weather-Icon" class="weather-icon">
+            <table>
+                <tr>
+                    <td class="description"><strong>Temperature:</strong></td>
+                    <td>10°C</td>
+                </tr>
+                <tr>
+                    <td class="description"><strong>Conditions:</strong></td>
+                    <td>Partly Cloudy</td>
+                </tr>
+                <tr>
+                    <td class="description"><strong>Wind:</strong></td>
+                    <td>5 km/h</td>
+                </tr>
+                <tr>
+                    <td class="description"><strong>Wind Chill:</strong></td>
+                    <td>N/A</td>
+                </tr>
+            </table>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>
+            &copy;<span id="currentyear"></span>
+            🌺Edorh Victoria Godshand🌺 Lagos
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
