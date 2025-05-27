@@ -12,9 +12,8 @@
 }
 
 body{
-  color: var(--font-color);
-  border: var(--secondary-color);
-  background-color: var(--accent-color);
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
 }
 
 .hero img {
@@ -27,12 +26,12 @@ header, footer{
   text-align: center;
   background-color: var(--primary-color);
   padding: 20px;
-  color: var(--secondary-color);
+  color: var(--accent-color);
 }
 
 h2{
   text-align: center;
-  color: var(--font-color);
+  color: var(--accent-color);
   padding: 10px;
   margin-bottom: 20px;
 }

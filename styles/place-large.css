@@ -10,8 +10,8 @@
   }
 
   h2{
-    background-color: var(--accent-color);
-    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    color: var(--accent-color);
     padding: 10px;
   }
 
