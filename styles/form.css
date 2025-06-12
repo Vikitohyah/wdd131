@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif, arial;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    background-color: purple;
+    text-align: center;
+    color: white;
+}
+
+h1{
+    padding: 20px;
+}
+
+h2{
+    text-align: center;
+    color: purple;
+}
+
+main{
+    margin: 20px 0 20px 0;
+}
+
+.center-box{
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ede9f7;
+    padding: 20px;
+    border-radius: 5px;
+    align-self: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label styling */
+label {
+  font-weight: 600;
+  margin-bottom: 0.4em;
+  display: block;
+}
+
+.form-section span{
+    color: purple;
+}
+
+/* Inputs, selects, textareas */
+input[type="text"],
+input[type="date"],
+select,
+textarea,
+#submit {
+  padding: 0.6em;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Star rating */
+.radio-option {
+  display: flex;
+  gap: 10px;
+}
+
+.radio-option label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.radio-option input[type="radio"] {
+    margin-bottom: 5px;
+}
+
+/* Checkbox */
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.checkbox-group label {
+  font-weight: normal;
+}
+
+/* Submit Button */
+#submit {
+  padding: 0.7em;
+  font-size: 1rem;
+  background-color: #6c4fb0;
+  color: white;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #5a3e99;
+}
+
+footer{
+    grid-area: footer;
+    padding: 10px;
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 20px;
+}
+
+footer p{
+    display: block;
+}
+
+#lastModified{
+    color: white;
+}
