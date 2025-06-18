@@ -144,7 +144,7 @@ const recipes = [
   id: "9",
   title: "Goat meat and Yam Pepper soup",
   category: "dinner",
-  image: "images/pepper-soup.webp",
+  image: "images/pepper-soups.webp",
   cookTime: "25 mins",
   ingredients: ["Goat meat", "Yam", "Pepper soup spice", "scent leave"],
   steps: [
