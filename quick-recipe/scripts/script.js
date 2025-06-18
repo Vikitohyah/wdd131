@@ -47,7 +47,7 @@ const recipes = [
     id: "2",
     title: "Chicken Salad",
     category: "lunch",
-    image: "images/chicken-salad.webp",
+    image: "images/chicken-salads.webp",
     cookTime: "10 mins",
     ingredients: ["Cooked chicken", "Lettuce", "Tomatoes", "Dressing"],
     steps: ["Chop all ingredients.", "Mix in a bowl.", "Add dressing.", "Serve chilled."],
