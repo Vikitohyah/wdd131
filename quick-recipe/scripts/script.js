@@ -37,7 +37,7 @@ const recipes = [
     id: "1",
     title: "Avocado Toast",
     category: "breakfast",
-    image: "images/avocado-toast.jpg",
+    image: "images/avocado-toast.webp",
     cookTime: "4 mins",
     ingredients: ["2 slices bread", "1 ripe avocado", "Salt", "Chili flakes"],
     steps: ["Toast the bread.", "Mash the avocado.", "Spread on toast.", "Sprinkle salt and chili flakes."],
@@ -47,7 +47,7 @@ const recipes = [
     id: "2",
     title: "Chicken Salad",
     category: "lunch",
-    image: "images/chicken-salad.jpg",
+    image: "images/chicken-salad.webp",
     cookTime: "10 mins",
     ingredients: ["Cooked chicken", "Lettuce", "Tomatoes", "Dressing"],
     steps: ["Chop all ingredients.", "Mix in a bowl.", "Add dressing.", "Serve chilled."],
@@ -57,7 +57,7 @@ const recipes = [
     id: "3",
     title: "Pasta Dinner",
     category: "dinner",
-    image: "images/pasta.jpg",
+    image: "images/pasta.webp",
     cookTime: "25 mins",
     ingredients: ["Pasta", "Tomato sauce", "Garlic", "Parmesan"],
     steps: ["Boil pasta.", "Heat sauce.", "Combine with pasta.", "Top with cheese."],
@@ -67,7 +67,7 @@ const recipes = [
   id: "4",
   title: "Plantain and Egg",
   category: "breakfast",
-  image: "images/plantain-egg.png",
+  image: "images/plantain-egg.webp",
   cookTime: "6 mins",
   ingredients: ["2 eggs", "Bell peppers", "Onion", "Salt", "Pepper", "Oil of your choice"],
   steps: [
@@ -83,7 +83,7 @@ const recipes = [
   id: "5",
   title: "Grilled Cheese Sandwich",
   category: "lunch",
-  image: "images/grilled-cheese.jpg",
+  image: "images/grilled-cheese.webp",
   cookTime: "3 mins",
   ingredients: ["2 slices bread", "Butter", "Cheddar cheese"],
   steps: [
@@ -97,7 +97,7 @@ const recipes = [
   id: "6",
   title: "Stuffed Bell Peppers",
   category: "dinner",
-  image: "images/stuffed-bell-peppers.jpg",
+  image: "images/stuffed-bell-peppers.webp",
   cookTime: "30 mins",
   ingredients: ["Bell peppers", "Rice", "Ground beef", "Tomato sauce", "Cheese"],
   steps: [
@@ -127,7 +127,7 @@ const recipes = [
   id: "8",
   title: "Chicken Stir-Fried Ramen",
   category: "lunch",
-  image: "images/chicken-ramen.jpg",
+  image: "images/chicken-ramen.webp",
   cookTime: "20 mins",
   ingredients: ["Chicken breast", "Ramen","Veggies", "Soy sauce", "Garlic", "Oil"],
   steps: [
@@ -144,7 +144,7 @@ const recipes = [
   id: "9",
   title: "Goat meat and Yam Pepper soup",
   category: "dinner",
-  image: "images/pepper-soup.jpg",
+  image: "images/pepper-soup.webp",
   cookTime: "25 mins",
   ingredients: ["Goat meat", "Yam", "Pepper soup spice", "scent leave"],
   steps: [
@@ -240,7 +240,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const favoriteRecipesDiv = document.getElementById("favoriteRecipes");
   const favoriteTipsList = document.getElementById("favoriteTipsList");
 
-  // Load and display favorite recipes
+  // Load and display favorite recipes from Local Storage
   if (favoriteRecipesDiv) {
     const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 
