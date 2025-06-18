@@ -230,7 +230,7 @@ footer {
 
 
 /* Responsive Design Mobile View */
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   header {
     flex-direction: row;
   }
